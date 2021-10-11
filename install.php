@@ -18,9 +18,23 @@ $sql = "DROP TABLE IF EXISTS courses;
 );";
 
 // Insert into the tabel courses
+//the .= is needed to concatenate or merge togheter the tqo $sql
+// request the one dropping and creating the table with the one inserting
+// new values into the table
 
-$sql = "
-INSERT INTO courses(kurskod,kursnamn,progression,kursplan) VALUES('DT173G','Webbutveckling III','B','https://elearn20.miun.se/moodle/course/view.php?id=10199')
+$sql .= "
+INSERT INTO courses(kurskod,kursnamn,progression,kursplan) 
+VALUES
+('DT084G', ' Introduktion till programmering i JavaScript', 'A', 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=30554'),
+('DT163G', 'Digital bildbehandling för webb', 'A', 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=24403'),
+('DT068G', 'Webbanvändbarhet', 'B', 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=30563'),
+('DT057G', 'Webbutveckling I', 'A', 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=22782'),
+('DT173G', 'Webbutveckling III', 'B', 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=22706'),
+('DT093G', 'Webbutveckling II', 'B', 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=27133'),
+('DT003G', 'Databaser', 'A', 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=21595'),
+('IK060G', 'Projektledning', 'A', 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=27003'),
+('GD008G', 'Typografi och form för webb', 'A', 'https://www.google.com/url?client=internal-element-cse&cx=015190983368593144054:kq6-drsmbqy&q=https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/Print/%3Fkursplanid%3D14739&sa=U&ved=2ahUKEwjD-r2OhbvzAhVv-ioKHcDiCwwQFnoEC'),
+('DT197G', 'Webbdesign för CMS', 'B', 'https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/Sok-kursplan/kursplan/?kursplanid=30728')
 ";
 
 echo "<pre>$sql</pre>";
