@@ -1,5 +1,27 @@
 # API
 
+**V1.1**
+
+Fixed the bugs after exelent teacher feedback.
+
+There was a small error in the install script here.
+
+In the $sql = "
+INSERT INTO * VALUES ";
+
+I had missed a . so the correct code would be " $sql .= " 
+
+This is now fixed and all of the code works as it should. 
+
+Link to published page: http://studenter.miun.se/~tijo1901/DT173G/moment%205.2/pub/
+
+Link to api raw data: http://studenter.miun.se/~tijo1901/DT173G/moment%205.1/api.php
+
+Link to api Install script: http://studenter.miun.se/~tijo1901/DT173G/moment%205.1/install.php (so you can erase and then replace the courses)
+
+
+**V1.0**
+
 So this is part two of the API assigment, sadly its not working exactly as it should online.
 
 On this free hosting site I can consume the API but not make any changes, it did however let me
